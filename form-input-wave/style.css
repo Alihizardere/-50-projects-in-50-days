@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  background-color: black;
+}
+.container {
+  background: rgb(15, 15, 15);
+  padding: 20px 40px;
+  border-radius: 10px;
+  color: #fff;
+}
+.container h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.container h1:hover {
+  color: #ff416c;
+}
+
+.container a {
+  color: #fff;
+}
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  width: 100%;
+  font-family: inherit;
+  font-size: 18px;
+  padding: 12px;
+  border: 0;
+  border-radius: 25px;
+  background: linear-gradient(to right, #ff416c, #ff4b2b);
+  color: #fff;
+}
+.btn:focus {
+  outline: 0;
+}
+.btn:active {
+  transform: scale(0.98);
+}
+.text {
+  font-size: 15px;
+  margin-left: 5px;
+}
+.form-control {
+  position: relative;
+  margin: 20px 0 40px;
+  width: 300px;
+}
+.form-control input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #fff;
+  width: 100%;
+  padding: 15px 0px;
+  font-size: 18px;
+  color: #fff;
+}
+.form-control input:valid,
+.form-control input:focus {
+  outline: 0;
+  border-bottom-color: #ff416c;
+}
+.form-control label {
+  position: absolute;
+  top: 16px;
+  left: 0px;
+  pointer-events: none;
+}
+.form-control label span {
+  display: inline-block;
+  font-size: 18px;
+  transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.form-control input:valid + label span,
+.form-control input:focus + label span {
+  color: #ff416c;
+  transform: translateY(-30px);
+}
